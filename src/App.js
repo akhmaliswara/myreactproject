@@ -17,11 +17,13 @@ function App(props) {
 	return (
 		<Router>
 			<div>
-				<ul className="navbar">
-					<li><Link to=""><p>Home</p></Link></li>
-					<li><Link to="/profil"><p>Input Profile</p></Link></li>
-					<li><Link to="/converter"><p>Angle converter</p></Link></li>
-				</ul>
+				<div className="navbar">
+					<ul>
+						<li><Link to=""><p>Home</p></Link></li>
+						<li><Link to="/profil"><p>Input Profile</p></Link></li>
+						<li><Link to="/converter"><p>Angle converter</p></Link></li>
+					</ul>
+				</div>
 				<div className="content">
 					<Switch>
 						<Route path="/profil">
@@ -31,7 +33,7 @@ function App(props) {
 							<Converter />
 						</Route>
 						<Route path="">
-							<Home />
+							<Home numberOfVisited={mapStateToProps.counters}/>
 						</Route>
 					</Switch>
 				</div>
