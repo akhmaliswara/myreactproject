@@ -11,6 +11,13 @@ import reducer from './reducers';
 
 const store = createStore(reducer);
 
+/*
+  Fitur-fitur yang ada di project ini antara lain
+  - Home, menunjukkan berapa kali mengklik link menuju page ini
+  - Converter, melakukan konversi sudut (radian dan derajat)
+  - Input Profile, berisi form untuk melakukan input profile
+*/
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

@@ -33,7 +33,7 @@ function App(props) {
 							<Converter />
 						</Route>
 						<Route path="">
-							<Home numberOfVisited={mapStateToProps.counters}/>
+							<Home numberOfVisited="0"/>
 						</Route>
 					</Switch>
 				</div>
